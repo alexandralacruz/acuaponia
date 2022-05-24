@@ -1,0 +1,97 @@
+content:Cultivos
+tipo,cultivo,t_min,t_opt,t_max,germinacion_1,germinacion_n,distancia,primera_cosecha,n_cosechas,distanciaXcosechaAnual
+Verduras,Acelgas,15.0,26.0,33.0,65.0,15.0,8.0,2.2,24.3,0.328767123
+Verduras,Ajos,0.0,19.0,25.0,135.0,135.0,15.0,4.5,2.7,5.547945205
+Verduras,Alcachofas,7.0,18.0,29.0,90.0,45.0,90.0,3.0,8.1,11.09589041
+Verduras,Berenjenas,23.0,25.0,30.0,90.0,60.0,60.0,3.0,6.1,9.863013699
+Verduras,Betabeles,10.0,22.5,30.0,120.0,90.0,30.0,4.0,4.1,7.397260274
+Verduras,Brócolis,4.0,17.0,35.0,100.0,60.0,45.0,3.3,6.1,7.397260274
+Verduras,Calabazas,15.0,27.5,35.0,120.0,100.0,150.0,4.0,3.7,41.09589041
+Verduras,Cebollas,7.0,14.0,30.0,120.0,120.0,15.0,4.0,3.0,4.931506849
+Verduras,Chícharos,5.0,18.0,35.0,85.0,85.0,10.0,2.8,4.3,2.328767123
+Verduras,Chiles,16.0,25.0,32.0,160.0,120.0,35.0,5.3,3.0,11.50684932
+Verduras,Coles,10.0,20.0,22.0,135.0,90.0,30.0,4.5,4.1,7.397260274
+Verduras,Coliflores,10.0,15.0,18.0,180.0,150.0,50.0,6.0,2.4,20.54794521
+Verduras,Ejotes,12.0,21.0,29.0,60.0,50.0,6.0,2.0,7.3,0.821917808
+Verduras,Jitomates,15.0,22.5,25.0,70.0,45.0,50.0,2.3,8.1,6.164383562
+Verduras,Lechuga,5.0,11.0,18.0,65.0,20.0,30.0,2.2,18.3,1.643835616
+Verduras,Pepinos,19.0,21.0,27.0,70.0,60.0,20.0,2.3,6.1,3.287671233
+Verduras,Rábanos,7.0,35.0,33.0,42.0,60.0,5.0,1.4,6.1,0.821917808
+Verduras,Tomates,18.0,22.5,27.0,90.0,90.0,60.0,3.0,4.1,14.79452055
+Verduras,Zanahorias,10.0,17.0,22.0,90.0,60.0,8.0,3.0,6.1,1.315068493
+Frutas,Frambuesas ,14.0,19.0,32.0,90.0,120.0,60.0,3.0,3.0,19.7260274
+Frutas,Fresas,2.0,18.5,30.0,150.0,150.0,30.0,5.0,2.4,12.32876712
+Frutas,Granada,30.0,37.0,38.0,730.0,120.0,300.0,24.3,3.0,98.63013699
+Frutas,Maracuyá,21.0,24.0,32.0,300.0,180.0,400.0,10.0,2.0,197.260274
+Frutas,Melón,21.0,24.0,32.0,90.0,90.0,50.0,3.0,4.1,12.32876712
+Frutas,Papaya,21.0,25.0,32.0,300.0,210.0,250.0,10.0,1.7,143.8356164
+Frutas,Piña,19.0,23.0,28.0,750.0,420.0,80.0,25.0,0.9,92.05479452
+Frutas,Plátano,18.0,20.0,24.0,90.0,90.0,200.0,3.0,4.1,49.31506849
+Frutas,Sandía,28.0,35.0,38.0,95.0,75.0,150.0,3.2,4.9,30.82191781
+Aromaticas y medicinales,Ajenjo,1.0,6.0,11.0,365.0,180.0,150.0,12.2,2.0,73.97260274
+Aromaticas y medicinales,Albahaca,18.0,22.0,26.0,35.0,28.0,15.0,1.2,13.0,1.150684932
+Aromaticas y medicinales,Anís,15.0,20.0,25.0,2190.0,120.0,20.0,73.0,3.0,6.575342466
+Aromaticas y medicinales,Cilantro,-10.0,10.0,29.0,70.0,45.0,20.0,2.3,8.1,2.465753425
+Aromaticas y medicinales,Eneldo,18.0,21.0,25.0,70.0,80.0,20.0,2.3,4.6,4.383561644
+Aromaticas y medicinales,Hierbabuena,14.0,20.0,22.0,30.0,15.0,25.0,1.0,24.3,1.02739726
+Aromaticas y medicinales,Hinojo,15.0,20.0,23.0,80.0,80.0,45.0,2.7,4.6,9.863013699
+Aromaticas y medicinales,Jengibre,20.0,25.0,30.0,300.0,240.0,10.0,10.0,1.5,6.575342466
+Aromaticas y medicinales,Lavanda,18.0,25.0,32.0,30.0,15.0,4.0,1.0,24.3,0.164383562
+Aromaticas y medicinales,Manzanilla,18.0,20.0,25.0,14.0,2.0,25.0,0.5,182.5,0.136986301
+Aromaticas y medicinales,Mejorana,-5.0,16.0,25.0,365.0,365.0,40.0,12.2,1.0,40.0
+Aromaticas y medicinales,Orégano,4.0,23.0,32.0,90.0,60.0,30.0,3.0,6.1,4.931506849
+Aromaticas y medicinales,Perejil,15.0,25.0,35.0,90.0,60.0,5.0,3.0,6.1,0.821917808
+Aromaticas y medicinales,Romero,20.0,25.0,30.0,730.0,150.0,15.0,24.3,2.4,6.164383562
+Aromaticas y medicinales,Tomillo,20.0,25.0,30.0,365.0,150.0,10.0,12.2,2.4,4.109589041
+Aromaticas y medicinales,Valeriana,20.0,25.0,30.0,365.0,365.0,30.0,12.2,1.0,30.0
+
+content:Municipios
+municipio,departamento,t_min,t_avg,t_max
+Planadas,Tolima,-10.0,22.5,31.0
+Alpujarra,Tolima,0.0,8.0,12.0
+Rioblanco,Tolima,5.0,22.0,29.0
+Anzoategui,Tolima,7.0,13.0,19.0
+Roncesvalles,Tolima,10.0,15.0,22.0
+Líbano,Tolima,11.0,17.5,23.0
+Murillo,Tolima,11.0,17.5,23.0
+Villahermosa,Tolima,13.0,18.5,23.0
+Cajamarca,Tolima,14.0,17.0,26.0
+Santa Isabel,Tolima,14.0,20.0,25.0
+Herveo,Tolima,15.0,20.5,26.0
+San Antonio,Tolima,16.0,20.5,27.0
+Palocabildo,Tolima,16.0,22.0,27.0
+Fresno,Tolima,16.0,24.0,27.0
+Icononzo,Tolima,17.0,22.0,28.0
+Casabianca,Tolima,17.0,22.5,27.0
+Dolores,Tolima,17.0,23.5,30.0
+Villarrica,Tolima,18.0,23.0,26.0
+Ibagué,Tolima,18.0,25.5,30.0
+Piedras,Tolima,19.0,26.0,32.0
+Ataco,Tolima,20.0,26.0,33.0
+Ortega,Tolima,20.0,26.5,34.0
+Falan,Tolima,20.0,27.0,32.0
+Rovira,Tolima,21.0,26.5,33.0
+Chaparral,Tolima,21.0,27.0,30.0
+San Luis,Tolima,21.0,27.5,34.0
+Cunday,Tolima,22.0,27.0,32.0
+Alvarado,Tolima,22.0,28.5,34.0
+Armero Guayabal,Tolima,22.0,28.5,34.0
+Coello,Tolima,22.0,29.0,32.0
+Coyaima,Tolima,22.0,29.0,37.0
+Espinal,Tolima,22.0,29.0,34.0
+Flandes,Tolima,22.0,29.0,35.0
+Saldaña,Tolima,22.0,31.0,37.0
+Carmen De Apicalá,Tolima,23.0,28.5,33.0
+Ambalema,Tolima,23.0,29.0,34.0
+Mariquita,Tolima,23.0,29.0,34.0
+Melgar,Tolima,23.0,29.0,34.0
+Valle De San Juan,Tolima,23.0,29.0,35.0
+Venadillo,Tolima,23.0,29.5,35.0
+Guamo,Tolima,23.0,30.0,37.0
+Purificación,Tolima,23.0,30.0,37.0
+Suárez,Tolima,23.0,30.0,37.0
+Natagaima,Tolima,23.0,30.5,38.0
+Lérida,Tolima,24.0,30.0,35.0
+Prado,Tolima,24.0,30.0,37.0
+Honda,Tolima,24.0,31.0,37.0
+

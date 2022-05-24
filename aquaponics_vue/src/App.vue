@@ -1,7 +1,8 @@
 <template>
-
-  <div>
-    <router-view />
+  <div class="wrapper">
+    <div id="content">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -14,4 +15,13 @@
   color: #2c3e50;
 }
 
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+}
 </style>
