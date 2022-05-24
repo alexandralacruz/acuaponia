@@ -1,0 +1,50 @@
+﻿;;;Temperatura °C;;;;;;;;;;;;;;;;
+;Municipio;Departamento;Min;Med;Max;;;;;;;;;;;;;;
+2;Planadas;Tolima;-10;22.5;31;;;;;;;;;;;;Municipio;Med;Max
+5;Alpujarra;Tolima;0;8;12;;;;;;;;;;;;Planadas;22.5;31
+37;Rioblanco;Tolima;5;22;29;;;;;;;;;;;;Alpujarra;8;12
+8;Anzoategui;Tolima;7;13;19;;;;;;;;;;;;Rioblanco;22;29
+25;Roncesvalles;Tolima;10;15;22;;;;;;;;;;;;Anzoategui;13;19
+28;Líbano;Tolima;11;17.5;23;;;;;;;;;;;;Roncesvalles;15;22
+46;Murillo;Tolima;11;17.5;23;;;;;;;;;;;;Líbano;17.5;23
+42;Villahermosa;Tolima;13;18.5;23;;;;;;;;;;;;Murillo;17.5;23
+21;Cajamarca;Tolima;14;17;26;;;;;;;;;;;;Villahermosa;18.5;23
+40;Santa Isabel;Tolima;14;20;25;;;;;;;;;;;;Cajamarca;17;26
+23;Herveo;Tolima;15;20.5;26;;;;;;;;;;;;Santa Isabel;20;25
+31;San Antonio;Tolima;16;20.5;27;;;;;;;;;;;;Herveo;20.5;26
+36;Palocabildo;Tolima;16;22;27;;;;;;;;;;;;San Antonio;20.5;27
+10;Fresno;Tolima;16;24;27;;;;;;;;;;;;Palocabildo;22;27
+33;Icononzo;Tolima;17;22;28;;;;;;;;;;;;Fresno;24;27
+47;Casabianca;Tolima;17;22.5;27;;;;;;;;;;;;Icononzo;22;28
+15;Dolores;Tolima;17;23.5;30;;;;;;;;;;;;Casabianca;22.5;27
+1;Villarrica;Tolima;18;23;26;;;;;;;;;;;;Dolores;23.5;30
+7;Ibagué;Tolima;18;25.5;30;;;;;;;;;;;;Villarrica;23;26
+32;Piedras;Tolima;19;26;32;;;;;;;;;;;;Ibagué;25.5;30
+30;Ataco;Tolima;20;26;33;;;;;;;;;;;;Piedras;26;32
+38;Ortega;Tolima;20;26.5;34;;;;;;;;;;;;Ataco;26;33
+11;Falan;Tolima;20;27;32;;;;;;;;;;;;Ortega;26.5;34
+14;Rovira;Tolima;21;26.5;33;;;;;;;;;;;;Falan;27;32
+17;Chaparral;Tolima;21;27;30;;;;;;;;;;;;Rovira;26.5;33
+41;San Luis;Tolima;21;27.5;34;;;;;;;;;;;;Chaparral;27;30
+3;Cunday;Tolima;22;27;32;;;;;;;;;;;;San Luis;27.5;34
+6;Alvarado;Tolima;22;28.5;34;;;;;;;;;;;;Cunday;27;32
+9;Armero Guayabal;Tolima;22;28.5;34;;;;;;;;;;;;Alvarado;28.5;34
+4;Coello;Tolima;22;29;32;;;;;;;;;;;;Armero Guayabal;28.5;34
+12;Coyaima;Tolima;22;29;37;;;;;;;;;;;;Coello;29;32
+13;Espinal;Tolima;22;29;34;;;;;;;;;;;;Coyaima;29;37
+16;Flandes;Tolima;22;29;35;;;;;;;;;;;;Espinal;29;34
+18;Saldaña;Tolima;22;31;37;;;;;;;;;;;;Flandes;29;35
+26;Carmen De Apicalá;Tolima;23;28.5;33;;;;;;;;;;;;Saldaña;31;37
+27;Ambalema;Tolima;23;29;34;;;;;;;;;;;;Carmen De Apicalá;28.5;33
+44;Mariquita;Tolima;23;29;34;;;;;;;;;;;;Ambalema;29;34
+45;Melgar;Tolima;23;29;34;;;;;;;;;;;;Mariquita;29;34
+20;Valle De San Juan;Tolima;23;29;35;;;;;;;;;;;;Melgar;29;34
+24;Venadillo;Tolima;23;29.5;35;;;;;;;;;;;;Valle De San Juan;29;35
+34;Guamo;Tolima;23;30;37;;;;;;;;;;;;Venadillo;29.5;35
+35;Purificación;Tolima;23;30;37;;;;;;;;;;;;Guamo;30;37
+43;Suárez;Tolima;23;30;37;;;;;;;;;;;;Purificación;30;37
+29;Natagaima;Tolima;23;30.5;38;;;;;;;;;;;;Suárez;30;37
+22;Lérida;Tolima;24;30;35;;;;;;;;;;;;Natagaima;30.5;38
+39;Prado;Tolima;24;30;37;;;;;;;;;;;;Lérida;30;35
+19;Honda;Tolima;24;31;37;;;;;;;;;;;;Prado;30;37
+;;;;;;;;;;;;;;;;;Honda;31;37
