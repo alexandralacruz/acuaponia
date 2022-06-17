@@ -1,8 +1,6 @@
 <template>
   <div class="wrapper">
-    <div id="content">
       <router-view />
-    </div>
   </div>
 </template>
 
@@ -12,16 +10,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #031254;
 }
 
-.wrapper {
-  display: flex;
-  width: 100%;
-  align-items: stretch;
-}
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-}
+// .wrapper {
+//   display: flex;
+//   width: 100%;
+//   align-items: stretch;
+// }
+// #sidebar {
+//     min-width: 250px;
+//     max-width: 250px;
+// }
 </style>
