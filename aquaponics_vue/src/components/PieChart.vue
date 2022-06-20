@@ -1,9 +1,8 @@
 <template>
-  <Line
-    :chart-data="chartData"
+  <Doughnut
     :chart-options="chartOptions"
+    :chart-data="chartData"
     :chart-id="chartId"
-    :dataset-id-key="datasetIdKey"
     :plugins="plugins"
     :css-classes="cssClasses"
     :styles="styles"
@@ -13,42 +12,30 @@
 </template>
 
 <script>
-import { Line } from "vue-chartjs";
+// import { defineComponent, h, PropType } from 'vue'
+
+import { Doughnut } from "vue-chartjs";
 import {
   Chart as ChartJS,
   Title,
   Tooltip,
   Legend,
-  LineElement,
-  LinearScale,
-  PointElement,
+  ArcElement,
   CategoryScale,
   Plugin,
 } from "chart.js";
 
-ChartJS.register(
-  Title,
-  Tooltip,
-  Legend,
-  LineElement,
-  LinearScale,
-  PointElement,
-  CategoryScale
-);
+ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale);
 
 export default {
-  name: "LineChart",
+  name: "DoughnutChart",
   components: {
-    Line,
+    Doughnut,
   },
   props: {
     chartId: {
       type: String,
-      default: "line-chart",
-    },
-    datasetIdKey: {
-      type: String,
-      default: "label",
+      default: "doughnut-chart",
     },
     width: {
       type: Number,
@@ -73,32 +60,21 @@ export default {
     chartData: {
       type: Object,
       default: {
-        labels: [
-        ],
+        labels: ["VueJs", "EmberJs", "ReactJs", "AngularJs"],
         datasets: [
           {
-            label: "Data One",
-            backgroundColor: "#f87979",
-            data: [],
+            backgroundColor: ["#41B883", "#E46651", "#00D8FF", "#DD1B16"],
+            data: [40, 20, 80, 10],
           },
         ],
       },
     },
-    txt: "",
   },
   data() {
     return {
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false,
-        scaleShowValues: true,
-        scales: {
-          xAxes: {
-            ticks: {
-              autoSkip: false
-            }
-          }
-        }
       },
     };
   },

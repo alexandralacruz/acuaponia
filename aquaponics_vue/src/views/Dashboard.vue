@@ -44,15 +44,35 @@
 
         <div class="col-10">
           <label for="minT" class="form-label"
-            >Temperatura mínima: 
-            <span id="slider_value"> {{tmin_value}} °C</span
-          ></label>
-          <input :min="this.t_min" :max="this.t_max" type="range" class="form-range" id="minT" v-model="tmin_value" @change="filterTemps()"/>
-          <label for="maxT" class="form-label">Temperatura máxima: 
-            <span id="slider_value"> {{tmax_value}} °C</span>
+            >Temperatura mínima:
+            <span id="slider_value"> {{ tmin_value }} °C</span></label
+          >
+          <input
+            :min="this.t_min"
+            :max="this.t_max"
+            type="range"
+            class="form-range"
+            id="minT"
+            v-model="tmin_value"
+            @change="filterTemps()"
+          />
+          <label for="maxT" class="form-label"
+            >Temperatura máxima:
+            <span id="slider_value"> {{ tmax_value }} °C</span>
           </label>
-          <input type="range"  :min="this.t_min" :max="this.t_max" class="form-range" id="maxT" v-model="tmax_value" @change="filterTemps()"/>
-          <LineChart :chartData="datosGraficaHidroponia" />
+          <input
+            type="range"
+            :min="this.t_min"
+            :max="this.t_max"
+            class="form-range"
+            id="maxT"
+            v-model="tmax_value"
+            @change="filterTemps()"
+          />
+          <div>
+            <LineChart :chartData="datosGraficaHidroponia" />
+            <PieChart :chartData="datosTiposCultivo" />
+          </div>
         </div>
       </div>
     </div>
@@ -63,6 +83,7 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import axios from "axios";
 import LineChart from "@/components/LineChart.vue";
+import PieChart from "@/components/PieChart.vue";
 // import DobleSlider from "@/components/DobleSlider.vue";
 
 export default {
@@ -78,55 +99,60 @@ export default {
       t_min: -20,
       loaded: false,
       datosGraficaHidroponia: {
-        labels: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-        ],
+        labels: [],
         datasets: [
           {
             label: "Data One",
             backgroundColor: "#f87979",
-            data: [40, 39, 10, 40, 39, 80, 40],
+            data: [],
           },
         ],
+      },
+      datosTiposCultivo: {
+        labels: [],
+        datasets: [],
       },
     };
   },
   components: {
     HelloWorld,
     LineChart,
-    // DobleSlider
+    PieChart,
   },
   mounted() {
-    this.getSimulator();
     document.title = "Inicio | Simulador";
+    this.getSimulator();
   },
   methods: {
     getSimulator() {
+      let tmp = "";
+
       this.datosGraficaHidroponia.labels = [];
       this.datosGraficaHidroponia.datasets = [];
       this.datosGraficaHidroponia.datasets.push({
         label: "Temperatura Máxima",
         backgroundColor: "#f87979",
         borderColor: "#f87979",
-        pointRadius: 0,
+        pointRadius: 3,
         data: [],
       });
       this.datosGraficaHidroponia.datasets.push({
         label: "Temperatura Mínima",
         backgroundColor: "#4d4dff",
         borderColor: "#4d4dff",
-        pointRadius: 0,
+        pointRadius: 3,
         data: [],
       });
+      this.datosTiposCultivo.datasets.push({
+        backgroundColor: ["#41B883", "#E46651", "#00D8FF"],
+        data: [],
+      });
+
       axios
         .get("api/v1/datos-hidroponia/")
         .then((response) => {
+          let tipos = [];
+          let tmp = "";
           for (let x in response.data) {
             this.datosGraficaHidroponia.labels.push(response.data[x].cultivo);
             this.datosGraficaHidroponia.datasets[0].data.push(
@@ -135,7 +161,20 @@ export default {
             this.datosGraficaHidroponia.datasets[1].data.push(
               response.data[x].t_min
             );
+            if (!(response.data[x].tipo === tmp)) {
+              tmp = response.data[x].tipo;
+              this.datosTiposCultivo.labels.push(tmp);
+            }
+            if (!this.datosTiposCultivo.datasets[0].data[this.datosTiposCultivo.labels.indexOf(tmp)]
+            ) {
+              this.datosTiposCultivo.datasets[0].data.push(1);
+            }// } else {
+            //   this.datosTiposCultivo.datasets[0].data[
+            //     this.datosTiposCultivo.labels.indexOf(tmp)
+            //   ]++;
+            // }
           }
+
           this.datosHidroponia = response.data;
           this.loaded = true;
         })
@@ -166,14 +205,17 @@ export default {
       this.datosGraficaHidroponia.datasets[1].data = new_tmin;
     },
     checkTemp(T) {
-      return T < this.tmax_value && T > this.t_min
+      return T < this.tmax_value && T > this.t_min;
     },
     filterTemps() {
       let newlabels = [];
       let new_tmax = [];
       let new_tmin = [];
       for (let i = 0; i < this.datosHidroponia.length; i++) {
-        if (this.datosHidroponia[i].t_max < this.tmax_value && this.datosHidroponia[i].t_min > this.tmin_value) {
+        if (
+          this.datosHidroponia[i].t_max < this.tmax_value &&
+          this.datosHidroponia[i].t_min > this.tmin_value
+        ) {
           newlabels.push(this.datosHidroponia[i].cultivo);
           new_tmax.push(this.datosHidroponia[i].t_max);
           new_tmin.push(this.datosHidroponia[i].t_min);
@@ -182,25 +224,25 @@ export default {
       this.datosGraficaHidroponia.labels = newlabels;
       this.datosGraficaHidroponia.datasets[0].data = new_tmax;
       this.datosGraficaHidroponia.datasets[1].data = new_tmin;
-    }
-    // ajusteDatos() {
-    //   if (this.datosHidroponia) {
-    //     this.datosGraficaHidroponia.labels = [];
-    //     this.datosGraficaHidroponia.datasets = [];
-    //     this.datosGraficaHidroponia.datasets.push({
-    //       label: "T max",
-    //       backgroundColor: "#540303",
-    //       data: [],
-    //     });
-    //     for (let x in this.datosHidroponia) {
-    //       this.datosGraficaHidroponia.labels.push(this.datosHidroponia[x].cultivo);
-    //       this.datosGraficaHidroponia.datasets[0].data.push(
-    //         this.datosHidroponia[x].t_max
-    //       );
-    //     }
-    //   }
-    // },
+    },
   },
+  // ajusteDatos() {
+  //   if (this.datosHidroponia) {
+  //     this.datosGraficaHidroponia.labels = [];
+  //     this.datosGraficaHidroponia.datasets = [];
+  //     this.datosGraficaHidroponia.datasets.push({
+  //       label: "T max",
+  //       backgroundColor: "#540303",
+  //       data: [],
+  //     });
+  //     for (let x in this.datosHidroponia) {
+  //       this.datosGraficaHidroponia.labels.push(this.datosHidroponia[x].cultivo);
+  //       this.datosGraficaHidroponia.datasets[0].data.push(
+  //         this.datosHidroponia[x].t_max
+  //       );
+  //     }
+  //   }
+  // },
 };
 </script>
 
