@@ -6,8 +6,7 @@
     :plugins="plugins"
     :css-classes="cssClasses"
     :styles="styles"
-    :width="width"
-    :height="height"
+    ref="pie"
   />
 </template>
 
@@ -37,14 +36,14 @@ export default {
       type: String,
       default: "doughnut-chart",
     },
-    width: {
-      type: Number,
-      default: 400,
-    },
-    height: {
-      type: Number,
-      default: 400,
-    },
+    // width: {
+    //   type: Number,
+    //   default: 400,
+    // },
+    // height: {
+    //   type: Number,
+    //   default: 400,
+    // },
     cssClasses: {
       default: "",
       type: String,
@@ -74,7 +73,16 @@ export default {
     return {
       chartOptions: {
         responsive: true,
+        hoverOffset: 5,
         maintainAspectRatio: false,
+        cutout: "30%",
+        plugins: {
+          legend: {
+            position: 'top',
+          }
+        },
+        onClick: (point, event) => {
+        },
       },
     };
   },

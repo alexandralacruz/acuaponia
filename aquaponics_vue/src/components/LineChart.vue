@@ -7,8 +7,6 @@
     :plugins="plugins"
     :css-classes="cssClasses"
     :styles="styles"
-    :width="width"
-    :height="height"
   />
 </template>
 
@@ -50,14 +48,14 @@ export default {
       type: String,
       default: "label",
     },
-    width: {
-      type: Number,
-      default: 400,
-    },
-    height: {
-      type: Number,
-      default: 400,
-    },
+    // width: {
+    //   type: Number,
+    //   default: 200,
+    // },
+    // height: {
+    //   type: Number,
+    //   default: 300,
+    // },
     cssClasses: {
       default: "",
       type: String,
@@ -84,22 +82,18 @@ export default {
         ],
       },
     },
+    chartOptions: {
+      type: Object,
+      default: {
+        responsive: true,
+        maintainAspectRatio: false,
+      }
+    },
     txt: "",
   },
   data() {
     return {
-      chartOptions: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scaleShowValues: true,
-        scales: {
-          xAxes: {
-            ticks: {
-              autoSkip: false
-            }
-          }
-        }
-      },
+
     };
   },
 };
