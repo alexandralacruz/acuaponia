@@ -1,4 +1,4 @@
 [build]
-  command = "aquaponics_vue/npm run build"
+  command = "npm run build"
   functions = "functions"
   publish = "build"
