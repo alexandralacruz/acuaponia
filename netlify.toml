@@ -1,34 +1,19 @@
 [build]
   command = "npm run build"
-  functions = "functions"
-
-[build.command]
-  command = "python ../aquaponics_django/manage.py collectstatic --noinput && python ../aquaponics_django/manage.py runserver"
-
-
-[build.environment]
-  DJANGO_SETTINGS_MODULE = "aquaponics_django.settings"
-  PYTHONPATH = "."
-
-
-[context.production.environment]
-  SPA_ROOT = "dist"
-
-[[redirects]]
-  from = "/api/*"
-  to = "http://localhost:8000/api/:splat"
-  status = 200
-  force = true
+  functions = "lambda"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true
 
-[context.production.env]
-  DJANGO_SECRET_KEY = "django-insecure-^6ekph@1s&@o_9mknq=n8fj%-@#5t^=4ayenw*6-3)izaag@hu"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
 
 [build.environment]
-  PIP_INSTALL = "true"
-  PIP_REQUIREMENTS = "requirements.txt"
-
+  VUE_APP_BACKEND_URL = "http://localhost:8000"
+  DJANGO_SETTINGS_MODULE = "aquaponics_django.aquaponics_django.settings"
