@@ -1,4 +1,4 @@
 [build]
-  command = "python ../aquaponics_django/manage.py runserver"
+  command = ""
   functions = "functions"
   publish = "dist"
