@@ -3,7 +3,7 @@
   functions = "functions"
 
 [build.command]
-  command = "python ../aquaponics_django/manage.py collectstatic --noinput; python manage.py runserver"
+  command = "python ../aquaponics_django/manage.py collectstatic --noinput && python ../aquaponics_django/manage.py runserver"
 
 
 [build.environment]
