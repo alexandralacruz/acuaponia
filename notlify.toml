@@ -16,3 +16,4 @@
 
 [dev]
   command = "npm run serve"
+  
