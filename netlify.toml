@@ -15,5 +15,5 @@
     Access-Control-Allow-Origin = "*"
 
 [build.environment]
-  VUE_APP_BACKEND_URL = "http://localhost:8000"
-  DJANGO_SETTINGS_MODULE = "aquaponics_django.aquaponics_django.settings"
+  VUE_APP_BACKEND_URL = "http://alexandralacruzgm.pythonanywhere.com/"
+  DJANGO_SETTINGS_MODULE = "aquaponics_django.settings"
