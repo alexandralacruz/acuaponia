@@ -1,4 +1,18 @@
 [build]
-  command = "python manage.py collectstatic --noinput"
-  functions = "lambda"
-  publish = "aquaponics_django/dist"
+  command = "npm run build"
+  functions-dir = "functions"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  DJANGO_SETTINGS_MODULE = "aquaponics_django.settings"
+
+[build.command]
+  script = "sh setup.sh"
+
+[dev]
+  command = "npm run serve"
