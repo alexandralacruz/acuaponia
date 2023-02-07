@@ -1,8 +1,10 @@
 #!/bin/sh
 #cd ..
+npx browserslist@latest --update-db
 
 # Instalar pipenv
 echo "instalando el ambiente virtual"
+
 
 # Crear entorno virtual con pipenv
 #pipenv install
@@ -28,7 +30,7 @@ echo "npm run serve"
 # Correr el servidor de Vue
 cd ../aquaponics_vue 
 
-npm run serve 
+npm run build 
 
 # Esperar a que ambos procesos finalicen
 #wait
