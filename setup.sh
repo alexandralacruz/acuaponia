@@ -1,7 +1,9 @@
 #!/bin/sh
 cd ..
 
+
 # Instalar pipenv
+echo "instalando el ambiente virtual"
 pip install pipenv
 
 # Crear entorno virtual con pipenv
