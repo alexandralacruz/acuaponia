@@ -18,11 +18,11 @@ cd aquaponics_django
 python manage.py migrate
 
 # Correr el servidor de Django
-python manage.py runserver &
+python manage.py runserver
 
 # Correr el servidor de Vue
-cd ../aquaponics_vue &
-npm run serve &
+cd ../aquaponics_vue 
+npm run serve 
 
 # Esperar a que ambos procesos finalicen
-wait
+#wait
