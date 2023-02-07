@@ -21,7 +21,7 @@ cd aquaponics_django
 python manage.py migrate
 
 # Correr el servidor de Django
-python manage.py runserver
+#python manage.py runserver
 ls
 pwd
 echo "npm run serve"
