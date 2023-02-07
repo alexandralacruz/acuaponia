@@ -3,13 +3,15 @@
 
 # Instalar pipenv
 echo "instalando el ambiente virtual"
-pip install pipenv
 
 # Crear entorno virtual con pipenv
-pipenv install
+#pipenv install
+python3 -m venv acuaponia-env
+source acuaponia-env/bin/activate
+
 
 # Activar entorno virtual
-pipenv shell
+#pipenv shell
 
 # Realizar migraciones en la base de datos
 cd aquaponics_django
@@ -20,7 +22,7 @@ python manage.py runserver
 
 # Correr el servidor de Vue
 cd ../aquaponics_vue 
-npm run serve 
+npm run build 
 
 # Esperar a que ambos procesos finalicen
 #wait
