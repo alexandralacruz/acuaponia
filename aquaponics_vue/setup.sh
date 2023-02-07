@@ -5,6 +5,7 @@
 
 # Instalar pipenv
 echo "instalando el ambiente virtual"
+npm install --save-dev @vue/cli-service
 
 
 # Crear entorno virtual con pipenv
