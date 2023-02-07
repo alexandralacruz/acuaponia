@@ -25,6 +25,9 @@ python manage.py runserver
 
 # Correr el servidor de Vue
 cd ../aquaponics_vue 
+ls
+pwd
+echo "npm run serve"
 npm run serve 
 
 # Esperar a que ambos procesos finalicen
