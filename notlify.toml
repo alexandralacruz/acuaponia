@@ -12,7 +12,7 @@
   DJANGO_SETTINGS_MODULE = "aquaponics_django.settings"
 
 [build.command]
-  script = "sh setup.sh"
+  script = ".\setup.sh"
 
 [dev]
   command = "npm run serve"
