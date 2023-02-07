@@ -12,8 +12,6 @@ echo "instalando el ambiente virtual"
 #apt install python3-pip python3-setuptools python3.8-venv
 #sudo apt-get install python3-pip
 python3 -m venv acuaponia-env --without-pip --system-site-packages
-source acuaponia-env/bin/activate
-
 
 # Activar entorno virtual
 #pipenv shell
@@ -26,10 +24,11 @@ python manage.py migrate
 #python manage.py runserver
 ls
 pwd
-echo "npm run serve"
+echo "echo npm run serve"
 # Correr el servidor de Vue
 cd ..
-cd aquaponics_vue/ 
+cd aquaponics_vue
+pwd
 
 npm run build 
 
