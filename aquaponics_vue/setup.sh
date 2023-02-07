@@ -1,7 +1,7 @@
 #!/bin/sh
 #cd ..
 #npx browserslist@latest --update-db
-pip3 install -r requirements.txt
+#pip3 install -r requirements.txt
 
 # Instalar pipenv
 echo "instalando el ambiente virtual"
