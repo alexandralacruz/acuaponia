@@ -28,7 +28,8 @@ ls
 pwd
 echo "npm run serve"
 # Correr el servidor de Vue
-cd ../aquaponics_vue 
+cd ..
+cd aquaponics_vue/ 
 
 npm run build 
 
