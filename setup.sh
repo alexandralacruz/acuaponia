@@ -29,6 +29,7 @@ echo "echo npm run serve"
 cd ..
 cd aquaponics_vue
 pwd
+ls
 
 npm run build 
 
