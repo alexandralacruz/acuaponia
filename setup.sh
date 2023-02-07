@@ -11,9 +11,6 @@ pipenv install
 # Activar entorno virtual
 pipenv shell
 
-# Instalar dependencias para el backend de Django
-pip install -r requirements.txt
-
 # Realizar migraciones en la base de datos
 cd aquaponics_django
 python manage.py migrate
