@@ -8,7 +8,8 @@ echo "instalando el ambiente virtual"
 #pipenv install
 
 #apt install python3-pip python3-setuptools python3.8-venv
-python -m venv acuaponia-env
+sudo apt-get install python3-pip
+python3 -m venv acuaponia-env --without-pip --system-site-packages
 source acuaponia-env/bin/activate
 
 
