@@ -5,15 +5,15 @@
 echo "instalando el ambiente virtual"
 
 # Crear entorno virtual con pipenv
-pipenv install
+#pipenv install
 
 #apt install python3-pip python3-setuptools python3.8-venv
-#python3 -m venv acuaponia-env
-#source acuaponia-env/bin/activate
+python -m venv acuaponia-env
+source acuaponia-env/bin/activate
 
 
 # Activar entorno virtual
-pipenv shell
+#pipenv shell
 
 # Realizar migraciones en la base de datos
 cd aquaponics_django
