@@ -1,6 +1,5 @@
 #!/bin/sh
-cd ..
-
+#cd ..
 
 # Instalar pipenv
 echo "instalando el ambiente virtual"
