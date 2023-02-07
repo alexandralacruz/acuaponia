@@ -22,14 +22,11 @@ python manage.py migrate
 
 # Correr el servidor de Django
 #python manage.py runserver
-ls
-pwd
-echo "echo npm run serve"
 # Correr el servidor de Vue
 cd ..
 cd aquaponics_vue
 pwd
-ls
+ls ./src
 
 npm run build 
 
