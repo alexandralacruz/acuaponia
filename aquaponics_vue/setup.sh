@@ -1,6 +1,6 @@
 #!/bin/sh
 #cd ..
-npx browserslist@latest --update-db
+#npx browserslist@latest --update-db
 pip3 install -r requirements.txt
 
 # Instalar pipenv
