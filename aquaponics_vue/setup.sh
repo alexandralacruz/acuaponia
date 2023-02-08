@@ -2,7 +2,10 @@
 #cd ..
 #npx browserslist@latest --update-db
 #pip3 install -r requirements.txt
-
+pip3 install virtualenv 
+virtualenv acuaponia-env
+. acuaponia-env/bin/activate
+pip3 install -r requirements.txt
 # Instalar pipenv
 echo "instalando el ambiente virtual"
 npm install --save-dev @vue/cli-service
@@ -13,9 +16,7 @@ npm install --save-dev @vue/cli-service
 
 #apt install python3-pip python3-setuptools python3.8-venv
 #sudo apt-get install python3-pip
-pip3 install virtualenv 
-virtualenv acuaponia-env
-. acuaponia-env/bin/activate
+
 
 #python3 -m venv acuaponia-env --without-pip --system-site-packages
 
