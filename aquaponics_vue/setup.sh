@@ -45,4 +45,4 @@ npm run build
 
 
 # Esperar a que ambos procesos finalicen
-wait
+#wait
