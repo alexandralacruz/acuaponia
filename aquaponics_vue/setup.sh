@@ -5,6 +5,8 @@
 pip3 install virtualenv 
 virtualenv acuaponia-env
 . acuaponia-env/bin/activate
+echo $VIRTUAL_ENV
+
 pip3 install -r requirements.txt
 # Instalar pipenv
 echo "instalando el ambiente virtual"
