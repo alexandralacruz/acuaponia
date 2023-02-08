@@ -10,7 +10,7 @@ virtualenv acuaponia-env
 echo $VIRTUAL_ENV
 
 pip3 install -r requirements.txt
-npx browserslist@latest --update-db
+npx browserslist@4.21.5 
 # Instalar pipenv
 npm install --save-dev @vue/cli-service
 
