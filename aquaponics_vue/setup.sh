@@ -2,7 +2,9 @@
 #cd ..
 #npx browserslist@latest --update-db
 #pip3 install -r requirements.txt
-pip3 install virtualenv 
+#pip3 install virtualenv 
+echo "instalando el ambiente virtual"
+
 virtualenv acuaponia-env
 . acuaponia-env/bin/activate
 echo $VIRTUAL_ENV
@@ -10,7 +12,6 @@ echo $VIRTUAL_ENV
 pip3 install -r requirements.txt
 npx browserslist@latest --update-db
 # Instalar pipenv
-echo "instalando el ambiente virtual"
 npm install --save-dev @vue/cli-service
 
 
@@ -28,7 +29,7 @@ npm install --save-dev @vue/cli-service
 
 # Realizar migraciones en la base de datos
 cd ../aquaponics_django
-python manage.py migrate
+#python manage.py migrate
 
 python manage.py runserver 0.0.0.0:8000
 
