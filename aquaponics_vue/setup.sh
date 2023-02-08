@@ -31,7 +31,7 @@ npm install --save-dev @vue/cli-service
 cd ../aquaponics_django
 #python manage.py migrate
 
-python manage.py runserver 0.0.0.0:8000
+python manage.py runserver 0.0.0.0:8000 &
 
 # Correr el servidor de Django
 #python manage.py runserver
