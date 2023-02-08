@@ -28,20 +28,21 @@ npm install --save-dev @vue/cli-service
 #pipenv shell
 
 # Realizar migraciones en la base de datos
-cd ../aquaponics_django
+cd ..
+cd aquaponics_django
 #python manage.py migrate
-
+ls
 python manage.py runserver 0.0.0.0:8000 &
 
 # Correr el servidor de Django
 #python manage.py runserver
 # Correr el servidor de Vue
-cd ../aquaponics_vue
+cd ..
+cd aquaponics_vue
 pwd
-ls ./src
 
 npm run build 
 
 
 # Esperar a que ambos procesos finalicen
-#wait
+wait
