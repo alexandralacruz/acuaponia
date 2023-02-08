@@ -13,8 +13,9 @@ npm install --save-dev @vue/cli-service
 
 #apt install python3-pip python3-setuptools python3.8-venv
 #sudo apt-get install python3-pip
-pip install virtualenv 
+pip3 install virtualenv 
 virtualenv acuaponia-env
+ls
 
 #python3 -m venv acuaponia-env --without-pip --system-site-packages
 
