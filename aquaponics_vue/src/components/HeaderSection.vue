@@ -7,7 +7,9 @@
       </a>
 
       <ul class="nav nav-pills">
+        <!--
         <li class="nav-item"><button class="btn text-white bg-primary" @click="$emit('print-pdf')"><i class="fa-solid fa-file-pdf fa-lg"></i> Guardar</button></li>
+        -->
         <li class="nav-item"><a href="/" class="nav-link active text-white" aria-current="page">Principal</a></li>
         <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
       </ul>
